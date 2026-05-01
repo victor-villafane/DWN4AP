@@ -1,0 +1,570 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Api de personajes, peliculas y cafe",
+    "description": "Es una api de pruebas",
+    "version": "1.0.0"
+  },
+  "host": "localhost:2026",
+  "basePath": "/api",
+  "tags": [
+    {
+      "name": "Películas",
+      "description": "Endpoints relacionados con películas"
+    },
+    {
+      "name": "Personajes",
+      "description": "Endpoints relacionados con personajes"
+    },
+    {
+      "name": "Productos",
+      "description": "Endpoints relacionados con productos"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/peliculas": {
+      "get": {
+        "tags": [
+          "Películas"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/personajes": {
+      "get": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "alternate_names": {
+                  "example": "any"
+                },
+                "species": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                },
+                "house": {
+                  "example": "any"
+                },
+                "dateOfBirth": {
+                  "example": "any"
+                },
+                "yearOfBirth": {
+                  "example": "any"
+                },
+                "wizard": {
+                  "example": "any"
+                },
+                "ancestry": {
+                  "example": "any"
+                },
+                "eyeColour": {
+                  "example": "any"
+                },
+                "hairColour": {
+                  "example": "any"
+                },
+                "wand": {
+                  "example": "any"
+                },
+                "patronus": {
+                  "example": "any"
+                },
+                "hogwartsStudent": {
+                  "example": "any"
+                },
+                "hogwartsStaff": {
+                  "example": "any"
+                },
+                "actor": {
+                  "example": "any"
+                },
+                "alternate_actors": {
+                  "example": "any"
+                },
+                "alive": {
+                  "example": "any"
+                },
+                "image": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/personajes/{id}": {
+      "post": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "idCafe": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "alternate_names": {
+                  "example": "any"
+                },
+                "species": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                },
+                "house": {
+                  "example": "any"
+                },
+                "dateOfBirth": {
+                  "example": "any"
+                },
+                "yearOfBirth": {
+                  "example": "any"
+                },
+                "wizard": {
+                  "example": "any"
+                },
+                "ancestry": {
+                  "example": "any"
+                },
+                "eyeColour": {
+                  "example": "any"
+                },
+                "hairColour": {
+                  "example": "any"
+                },
+                "wand": {
+                  "example": "any"
+                },
+                "patronus": {
+                  "example": "any"
+                },
+                "hogwartsStudent": {
+                  "example": "any"
+                },
+                "hogwartsStaff": {
+                  "example": "any"
+                },
+                "actor": {
+                  "example": "any"
+                },
+                "alternate_actors": {
+                  "example": "any"
+                },
+                "alive": {
+                  "example": "any"
+                },
+                "image": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Personajes"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                },
+                "alternate_names": {
+                  "example": "any"
+                },
+                "species": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                },
+                "house": {
+                  "example": "any"
+                },
+                "dateOfBirth": {
+                  "example": "any"
+                },
+                "yearOfBirth": {
+                  "example": "any"
+                },
+                "wizard": {
+                  "example": "any"
+                },
+                "ancestry": {
+                  "example": "any"
+                },
+                "eyeColour": {
+                  "example": "any"
+                },
+                "hairColour": {
+                  "example": "any"
+                },
+                "wand": {
+                  "example": "any"
+                },
+                "patronus": {
+                  "example": "any"
+                },
+                "hogwartsStudent": {
+                  "example": "any"
+                },
+                "hogwartsStaff": {
+                  "example": "any"
+                },
+                "actor": {
+                  "example": "any"
+                },
+                "alternate_actors": {
+                  "example": "any"
+                },
+                "alive": {
+                  "example": "any"
+                },
+                "image": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/productos": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Productos"
+        ],
+        "description": "",
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/productos/{id}": {
+      "get": {
+        "tags": [
+          "Productos"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Productos"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Productos"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "nombre": {
+                  "example": "any"
+                },
+                "precio": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Productos"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "schemas": [
+    "http"
+  ]
+}
