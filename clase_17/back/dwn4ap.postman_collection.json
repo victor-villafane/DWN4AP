@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "0c96a07a-f88f-4f14-af85-20091dd7d163",
+		"name": "dwn4ap",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29900298"
+	},
+	"item": [
+		{
+			"name": "getPersonajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2026/api/personajes",
+					"host": [
+						"localhost"
+					],
+					"port": "2026",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPersonajesById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:2026/api/personajes/69e181fbe2cbc9dee9ae8264",
+					"host": [
+						"localhost"
+					],
+					"port": "2026",
+					"path": [
+						"api",
+						"personajes",
+						"69e181fbe2cbc9dee9ae8264"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardarPersonaje",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Harry Potter 2\",\r\n    \"alternate_names\": [\r\n        \"The Boy Who Lived\",\r\n        \"The Chosen One\",\r\n        \"Undesirable No. 1\",\r\n        \"Potty\"\r\n    ],\r\n    \"species\": \"human\",\r\n    \"gender\": \"male\",\r\n    \"house\": \"Gryffindor\",\r\n    \"dateOfBirth\": \"31-07-1980\",\r\n    \"yearOfBirth\": 1980,\r\n    \"wizard\": true,\r\n    \"ancestry\": \"half-blood\",\r\n    \"eyeColour\": \"green\",\r\n    \"hairColour\": \"black\",\r\n    \"wand\": {\r\n        \"wood\": \"holly\",\r\n        \"core\": \"phoenix tail feather\",\r\n        \"length\": 11\r\n    },\r\n    \"patronus\": \"stag\",\r\n    \"hogwartsStudent\": true,\r\n    \"hogwartsStaff\": false,\r\n    \"actor\": \"Daniel Radcliffe\",\r\n    \"alternate_actors\": [],\r\n    \"alive\": true,\r\n    \"image\": \"https://ik.imagekit.io/hpapi/harry.jpg\",\r\n    \"cafes\": [\r\n        {},\r\n        {\r\n            \"_id\": \"69e17e1ce2cbc9dee9ae825d\",\r\n            \"id\": 3,\r\n            \"nombre\": \"Latte\",\r\n            \"precio\": 160\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2026/api/personajes",
+					"host": [
+						"localhost"
+					],
+					"port": "2026",
+					"path": [
+						"api",
+						"personajes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletePersonajes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:2026/api/personajes/69e820d2821790f54310f1bb",
+					"host": [
+						"localhost"
+					],
+					"port": "2026",
+					"path": [
+						"api",
+						"personajes",
+						"69e820d2821790f54310f1bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reemplazarPersonaje",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Harry Potter 2\",\r\n    \"alternate_names\": [\r\n        \"The Boy Who Lived\",\r\n        \"The Chosen One\",\r\n        \"Undesirable No. 1\",\r\n        \"Potty\"\r\n    ],\r\n    \"species\": \"human\",\r\n    \"gender\": \"male\",\r\n    \"house\": \"Gryffindor\",\r\n    \"dateOfBirth\": \"31-07-1980\",\r\n    \"yearOfBirth\": 1980,\r\n    \"wizard\": true,\r\n    \"ancestry\": \"half-blood\",\r\n    \"eyeColour\": \"green\",\r\n    \"hairColour\": \"black\",\r\n    \"wand\": {\r\n        \"wood\": \"holly\",\r\n        \"core\": \"phoenix tail feather\",\r\n        \"length\": 11\r\n    },\r\n    \"patronus\": \"stag\",\r\n    \"hogwartsStudent\": true,\r\n    \"hogwartsStaff\": false,\r\n    \"actor\": \"Daniel Radcliffe\",\r\n    \"alternate_actors\": [],\r\n    \"alive\": true,\r\n    \"image\": \"https://ik.imagekit.io/hpapi/harry.jpg\",\r\n    \"cafes\": [\r\n        {},\r\n        {\r\n            \"_id\": \"69e17e1ce2cbc9dee9ae825d\",\r\n            \"id\": 3,\r\n            \"nombre\": \"Latte\",\r\n            \"precio\": 160\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2026/api/personajes/69e820d2821790f54310f1bb",
+					"host": [
+						"localhost"
+					],
+					"port": "2026",
+					"path": [
+						"api",
+						"personajes",
+						"69e820d2821790f54310f1bb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Harry Potter 2\",\r\n    \"alternate_names\": [\r\n        \"The Boy Who Lived\",\r\n        \"The Chosen One\",\r\n        \"Undesirable No. 1\",\r\n        \"Potty\"\r\n    ],\r\n    \"species\": \"human\",\r\n    \"gender\": \"male\",\r\n    \"house\": \"Gryffindor\",\r\n    \"dateOfBirth\": \"31-07-1980\",\r\n    \"yearOfBirth\": 1980,\r\n    \"wizard\": true,\r\n    \"ancestry\": \"half-blood\",\r\n    \"eyeColour\": \"green\",\r\n    \"hairColour\": \"black\",\r\n    \"wand\": {\r\n        \"wood\": \"holly\",\r\n        \"core\": \"phoenix tail feather\",\r\n        \"length\": 11\r\n    },\r\n    \"patronus\": \"stag\",\r\n    \"hogwartsStudent\": true,\r\n    \"hogwartsStaff\": false,\r\n    \"actor\": \"Daniel Radcliffe\",\r\n    \"alternate_actors\": [],\r\n    \"alive\": true,\r\n    \"image\": \"https://ik.imagekit.io/hpapi/harry.jpg\",\r\n    \"cafes\": [\r\n        {},\r\n        {\r\n            \"_id\": \"69e17e1ce2cbc9dee9ae825d\",\r\n            \"id\": 3,\r\n            \"nombre\": \"Latte\",\r\n            \"precio\": 160\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2026/api/personajes/69e820d2821790f54310f1bb",
+					"host": [
+						"localhost"
+					],
+					"port": "2026",
+					"path": [
+						"api",
+						"personajes",
+						"69e820d2821790f54310f1bb"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
